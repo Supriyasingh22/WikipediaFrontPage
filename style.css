@@ -1,0 +1,176 @@
+.navbar ul {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between the items */
+    align-items: center; /* Align items vertically in the center */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff; /* Adjust the background color as needed */
+    width: 100%; /* Ensure the navbar takes full width */
+}
+
+#hamburger-icon {
+    height: 50px;
+    margin-left: 20px; /* Add some margin to the left for spacing */
+    cursor: pointer;
+
+}
+
+#centralImage1 {
+    height: 150px;
+    margin: 0 auto; /* Center the image */
+}
+
+.box {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center items horizontally */
+    margin-right: 40px; /* Add some margin to the right for spacing */
+    cursor: pointer;
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(189, 123, 58, 0.6);
+
+}
+.box:hover input{
+    width:250px;
+}
+
+.box input{
+
+    width:0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    color: rgb(208, 107, 48);
+
+}
+
+.box a .fa{
+
+    color: rgb(190, 81, 27);
+    font-size: 18px;
+}
+
+
+#sidebar-menu {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+    top: 30;
+    left: 0;
+    width: 15%; /* Adjust the width to make it look like a card */
+    height: 60%;
+    z-index: 99;
+    background: rgba(210, 130, 79, 0.9);
+    color: white;
+    list-style: none;
+    padding: 30px; /* Add padding to give it a card-like appearance */
+    border-radius: 15px; /* Optional: Add rounded corners for a more card-like look */
+    box-shadow: 0 4px 8px rgba(234, 163, 139, 0.2); /* Optional: Add a shadow for depth */
+}
+
+   
+   #sidebar-menu.showMenu {
+    transform: translateX(0);
+   }
+
+   #sidebar-menu a {
+    display: block; /* Make links block elements to add space between them */
+    margin-bottom: 10px; /* Add space between links */
+    color: white; /* Set the link color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+#sidebar-menu a:hover {
+    color: #00ff00; /* Change color on hover */
+}
+
+.side-content {
+    display: block; /* Ensures the span behaves like a block element */
+    width: 10%; /* Adjust the width as needed */
+    margin-left: 40px; /* Adjusts the left margin */
+    padding: 20px; /* Adds some padding inside the sidebar */
+    background: rgba(210, 130, 79, 0.8); /* Example background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.side-content b, .side-content a {
+    display: block; /* Makes each element start on a new line */
+    margin-bottom: 10px; /* Adds space between each element */
+}
+
+.side-content hr {
+    width: 80%; /* Adjusts the width of the horizontal line */
+    margin-left: 0px ; /* Centers the horizontal line and adds some space above and below */
+    border: none; /* Removes default border */
+    border-top: 1px solid #ccc; /* Styles the horizontal line */
+} 
+
+#body-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the start of the container */
+    gap: 30px; /* Adjust the gap between the side content and main content */
+    padding-left: 60px; /* Adjust the left padding for the entire container */
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.Main-Content {
+    display: flex; /* Make .Main-Content a flex container */
+    flex-direction: column; /* Stack the items vertically */
+    padding-left: 60px; /* Adjust this value to control the distance from the left */
+    row-gap: 10px; /* Add space between the rows */
+    flex-grow: 1; /* Allow .Main-Content to grow and take up the remaining space */
+    /* Additional styling for Main-Content as needed */
+}
+
+.Main-Content hr {
+    width: 80%;
+    margin-top:0px;
+    margin-left: 0px;
+    border: none;
+    border-top: 1px solid #cac7c7;
+}
+
+h1, hr {
+    margin: 0;
+}
+
+hr,p{
+    margin: 0;
+}
+h2,hr{
+    margin: 0;
+}
+p,h2{
+    margin: 5px;
+}
+
+.diff{
+    display: flex; /* Ensure the span is a flex container */
+    gap: 20px; /* Add a gap between the flex items */
+}
+
+.list {
+    display: flex; /* Ensure the ul is a flex container */
+    flex-direction: column; /* Stack the items vertically */
+    gap: 10px; /* Add a gap between the flex items */
+}
+.diff a{
+    text-decoration: none;
+    color: rgb(220, 132, 18);
+
+}
+
+.list a{
+    
+    text-decoration: none;
+    color: rgb(220, 132, 18);
+}
